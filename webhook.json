@@ -1,0 +1,14 @@
+{"webhook": 
+  {"name": "webhook-desaweb",
+   "targetPipeline": "dis-desa-web",
+   "targetAction": "GITHUB",
+   "filters": [
+    {
+      "jsonPath": "$.ref", 
+      "matchEquals": "refs/heads/main"
+    }
+   ],
+   "authentication": "GITHUB_HMAC",
+   "authenticationConfiguration": {"SecretToken":"disdesweb"}
+  }
+}
