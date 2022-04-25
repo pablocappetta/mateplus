@@ -1,11 +1,11 @@
 {"webhook": 
   {"name": "webhook-desaweb",
    "targetPipeline": "dis-desa-web",
-   "targetAction": "GITHUB",
+   "targetAction": "Source",
    "filters": [
     {
       "jsonPath": "$.ref", 
-      "matchEquals": "refs/heads/main"
+      "matchEquals": "refs/heads/{Branch}"
     }
    ],
    "authentication": "GITHUB_HMAC",
