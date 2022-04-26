@@ -1,267 +1,914 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="x-apple-disable-message-reformatting">
-  <!--[if !mso]><!-->
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!--<![endif]-->
-  <title></title>
-  <style type="text/css">
-    @media screen and (max-width: 350px) {
-      .three-col .column {
-        max-width: 100% !important;
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <title></title>
+    <style type="text/css">
+      * {
+        font-family: "Netflix Sans" !important;
       }
-    }
-    @media screen and (min-width: 351px) and (max-width: 460px) {
-      .four-col .column {
-        max-width: 50% !important;
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 100;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+            format("woff");
       }
-      .three-col .column {
-        max-width: 50% !important;
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 300;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+            format("woff");
       }
-    }
-    @media screen and (max-width: 460px) {
-      .two-col .column {
-        max-width: 100% !important;
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 400;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+            format("woff");
       }
-      .two-col img {
-        width: 100% !important;
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 700;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+            format("woff");
       }
-    }
-    @media screen and (min-width: 461px) {
-      .four-col .column {
-        max-width: 20% !important;             
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 800;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Netflix Sans";
+        font-weight: 900;
+        font-display: optional;
+        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+            format("woff2"),
+          url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+            format("woff");
+      }
+      @media screen and (max-width: 350px) {
+        .three-col .column {
+          max-width: 100% !important;
         }
-      .three-col .column {
-        max-width: 33.3% !important;
       }
-      .two-col .column {
-        max-width: 50% !important;
+      @media screen and (min-width: 351px) and (max-width: 460px) {
+        .four-col .column {
+          max-width: 50% !important;
+        }
+        .three-col .column {
+          max-width: 50% !important;
+        }
       }
-      .sidebar .small {
-        max-width: 16% !important;
+      @media screen and (max-width: 460px) {
+        .two-col .column {
+          max-width: 100% !important;
+        }
+        .two-col img {
+          width: 100% !important;
+        }
       }
-      .sidebar .large {
-        max-width: 84% !important;
+      @media screen and (min-width: 461px) {
+        .four-col .column {
+          max-width: 20% !important;
+        }
+        .three-col .column {
+          max-width: 33.3% !important;
+        }
+        .two-col .column {
+          max-width: 50% !important;
+        }
+        .sidebar .small {
+          max-width: 16% !important;
+        }
+        .sidebar .large {
+          max-width: 84% !important;
+        }
+        .encabezado .logo {
+          max-width: 20% !important;
+        }
       }
-      .encabezado .logo {
-        max-width: 20% !important;
-      }
-    }
-  </style>
-</head>
-<body style="margin:0;padding:0;word-spacing:normal;background-color:#ffffff;">
-  <div role="article" aria-roledescription="email" lang="en" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:black;background-repeat: no-repeat;background-position: center">
-    <table role="presentation" style="width:100%;border:0;border-spacing:0;">
-      <tr>
-        <td align="center">
-          <!--[if mso]>
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      word-spacing: normal;
+      background-color: #ffffff;
+    "
+  >
+    <div
+      role="article"
+      aria-roledescription="email"
+      lang="en"
+      style="
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <table
+        role="presentation"
+        style="width: 100%; border: 0; border-spacing: 0"
+      >
+        <tr>
+          <td align="center">
+            <!--[if mso]>
           <table role="presentation" align="center" style="width:660px;">
           <tr>
           <td style="padding:20px 0;">
           <![endif]-->
-          <div class="outer" style="width:96%;max-width:660px;margin:20px auto;">
-            
-            <!-- Encabezado-->
-            <div class="encabezado" style="text-align:right;direction:rtl;border: 0px solid red">
-                <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/logo.png" style="height:auto;position: relative;top:3px;">         
-            </div>  
-            <!--Fin Encabezado-->
-            
-            <!--<div class="spacer" style="line-height:26px;height:10px;mso-line-height-rule:exactly;">&nbsp;</div>-->
-            
-            <!-- Portada-->
-            <div class="two-col" style="text-align:center;font-size:0;direction:rtl; background-repeat: no-repeat;background-position: center; background-image: url(https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/header.jpeg); border: 0px solid red; ";>
-              <!--[if mso]>
+            <div
+              class="outer"
+              style="width: 96%; max-width: 660px; margin: 20px auto"
+            >
+              <!-- Encabezado-->
+              <div
+                class="encabezado"
+                style="
+                  text-align: right;
+                  direction: rtl;
+                  border: 0px solid #e50914;
+                  height: 60px;
+                "
+              >
+                <img
+                  src="images/logoNetflix.png"
+                  style="
+                    height: auto;
+                    position: relative;
+                    top: -10px;
+                    right: -4px;
+                    margin: auto;
+                    height: 240px;
+                  "
+                />
+              </div>
+              <!--Fin Encabezado-->
+
+              <!--<div class="spacer" style="line-height:26px;height:10px;mso-line-height-rule:exactly;">&nbsp;</div>-->
+
+              <!-- Portada-->
+              <div
+                class="two-col"
+                style="
+                  text-align: center;
+                  font-size: 0;
+                  direction: rtl;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-image: url(https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/header.jpeg);
+                  border: 0px solid #e50914;
+                  position: relative;
+                "
+                ;
+              >
+                <!--[if mso]>
               <table role="presentation" width="100%" dir="rtl">
               <tr>
               <td style="width:50%;padding:10px;" valign="middle" dir="ltr">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin:0;font-family:Arial,sans-serif;">
-                    
-                  </p>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 330px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin: 0"></p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               <td style="width:50%;padding:10px;" valign="middle" dir="ltr">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:230px;display:inline-block;vertical-align:text-top;direction:ltr;padding-top: 30px;">
-                <div style="padding:10px;font-size:14px;line-height:20pxpx;text-align:left;">
-                  <p style="margin-top:0;margin-bottom:12px;font-family:Arial,sans-serif;font-size:36px;line-height:28px;font-weight:bold;color:white; padding-bottom: 0px; line-height: 40px">Llega la nueva temporada de Rick y Morty!</p>
-                  <p style="margin-top:0;margin-bottom:5px;font-family:Arial,sans-serif;color: white;font-size:80%;">Disponible a partir del 1 de Mayo</p>
-                  <p style="margin-top:0;margin-bottom:14px;font-family:Arial,sans-serif;color: white">Rick es un brillante científico un tanto borracho que secuestra a su irritable nieto adolescente Morty para vivir aventuras en otros mundos y en dimensiones alternativas.</p>
-                  <p style="margin-top:0;margin-bottom:0px;font-family:Arial,sans-serif;color: white;font-size:70%">Protagonistas: Justin Roiland, Chris Parnell, Spencer Grammer</p>
-                  <p style="margin-top:0;margin-bottom:0px;font-family:Arial,sans-serif;color: white;font-size:70%">Creado por: Dan Harmon, Justin Roiland</p>
-                    
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 230px;
+                    display: inline-block;
+                    vertical-align: text-top;
+                    direction: ltr;
+                    padding-bottom: 14px;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 10px;
+                      font-size: 14px;
+                      line-height: 20pxpx;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin-top: 0;
+                        margin-bottom: 12px;
+                        font-size: 36px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        color: white;
+                        padding-bottom: 0px;
+                        line-height: 40px;
+                      "
+                    >
+                      ¡Rick y Morty están de regreso!
+                    </p>
+                    <p
+                      style="
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                        color: white;
+                        font-size: 80%;
+                      "
+                    >
+                      Disponible a partir del 1 de Mayo
+                    </p>
+                    <p style="margin-top: 4; margin-bottom: 14px; color: white">
+                      Rick es un brillante científico un tanto borracho que
+                      secuestra a su irritable nieto adolescente Morty para
+                      vivir aventuras en otros mundos y en dimensiones
+                      alternativas.
+                    </p>
+                    <p
+                      style="
+                        margin-top: 4;
+                        margin-bottom: 0px;
+                        color: white;
+                        font-size: 70%;
+                      "
+                    >
+                      Protagonistas: Justin Roiland, Chris Parnell, Spencer
+                      Grammer
+                    </p>
+                    <p
+                      style="
+                        margin-top: 0;
+                        margin-bottom: 0px;
+                        color: white;
+                        font-size: 70%;
+                      "
+                    >
+                      Creado por: Dan Harmon, Justin Roiland
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-              <![endif]--> 
-            </div>
-            <!-- Fin de Portada-->
-            
-            <div class="spacer" style="line-height:40px;height:15px;mso-line-height-rule:exactly;background-color: rgb(3, 3, 3);box-shadow: inset 1px 4px 9px -6px">&nbsp;</div>
-            
-            <!-- Inicio Información-->
-            <table role="presentation" style="width:100%;border:0;border-spacing:0;border:0px solid red">
-              <tr>
-                <td style="padding:10px 10px 20px 10px;font-family:Arial,sans-serif;font-size:24px;line-height:28px;font-weight:bold;">
-                  <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/banner.png" width="640" alt="" style="width:50%;height:auto;display: block;margin-left: auto;margin-right: auto;width: 50%"/>
-                </td>
-              </tr>                 
-            </table>
-            <div class="sidebar" style="font-size:0;text-align:center;border:0px solid red">
-                <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:5px;font-size:14px;line-height:18px;text-align:center;">
-                  <p style="margin:0;font-family:Arial,sans-serif;">
-                        <a href="" style="margin-left: px; background: red; text-decoration: none; padding: 10px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">>VER</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
-                        <a href="" style="margin-left: 20px background: red; border: 1px solid white; text-decoration: none; padding: 10px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">+MI LISTA</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>    
-                  </p>
-                </div>
-              </div>
-            </div>    
-            <div class="sidebar" style="font-size:0;text-align:center;direction:rtl;border:0px solid red">
-              <div class="large" style="width:100%;max-width:560px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:0px 60px 0px 60px;font-size:12px;line-height:14px;">
-                  <p style="margin:0;font-family:Arial,sans-serif;color:white">Esta serie, creada por Dan Harmon y Justin Roiland, regresa con nuevos episodios explosivos cargados de locuras, acción, bromas sin piedad e inventos tecnológicos llenos de ingenio. Además de seguir explorando la peculiar relación entre abuelo y nieto, Rick y Morty se enfrentan a nuevos personajes y situaciones que los pondrán más de una vez en aprietos antes de encontrar la solución más divertida para escapar de ellas. </p>
-                </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               </tr>
               </table>
               <![endif]-->
-            </div>  
-            <!-- Fin Información-->  
-            
-            <div class="spacer" style="line-height:40px;height:15px;mso-line-height-rule:exactly;background-color: rgb(3, 3, 3);position: relative;top: 10px;box-shadow: inset 1px 4px 9px -8px">&nbsp;</div>
+              </div>
+              <!-- Fin de Portada-->
 
-            <!-- Inicio Otras series-->
-            <div class="three-col" style="font-size:0;text-align:center;border: 0px solid red">
-              <!--[if mso]>
+              <div
+                class="spacer"
+                style="
+                  line-height: 40px;
+                  height: 15px;
+                  mso-line-height-rule: exactly;
+                  background-color: rgb(3, 3, 3);
+                  box-shadow: inset 1px 4px 9px -6px;
+                "
+              >
+                &nbsp;
+              </div>
+
+              <!-- Inicio Información-->
+              <table
+                role="presentation"
+                style="
+                  width: 100%;
+                  border: 0;
+                  border-spacing: 0;
+                  border: 0px solid #e50914;
+                "
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 10px 10px 20px 10px;
+                      font-size: 24px;
+                      line-height: 28px;
+                      font-weight: bold;
+                    "
+                  >
+                    <img
+                      src="https://logos-marcas.com/wp-content/uploads/2022/01/Rick-And-Morty-Logo.png"
+                      width="640"
+                      alt=""
+                      style="
+                        width: 50%;
+                        height: auto;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+              <div
+                class="sidebar"
+                style="
+                  font-size: 0;
+                  text-align: center;
+                  border: 0px solid #e50914;
+                "
+              >
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 330px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 5px;
+                      font-size: 14px;
+                      line-height: 18px;
+                      text-align: center;
+                    "
+                  >
+                    <p style="margin: 0">
+                      <a
+                        href=""
+                        style="
+                          width: 80px;
+                          border: 1px solid #e50914;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 10px 25px;
+                          color: #ffffff;
+                          display: inline-block;
+                          margin-right: 32px;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 25px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 20pt;
+                            "
+                            >&nbsp;</i
+                          ><!
+                        [endif]--><span
+                          style="mso-text-raise: 10pt; font-weight: bold"
+                          >> VER</span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 25px; mso-font-width: -100%"
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></a
+                      >
+                      <a
+                        href=""
+                        style="width: 80px;margin-left: 20px background: #E50914; border: 1px solid white; text-decoration: none; padding: 10px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff;"
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 25px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 20pt;
+                            "
+                            >&nbsp;</i
+                          ><!
+                        [endif]--><span
+                          style="mso-text-raise: 10pt; font-weight: bold"
+                          >+ MI LISTA</span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 25px; mso-font-width: -100%"
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sidebar"
+                style="
+                  font-size: 0;
+                  text-align: center;
+                  direction: rtl;
+                  border: 0px solid #e50914;
+                "
+              >
+                <div
+                  class="large"
+                  style="
+                    width: 100%;
+                    max-width: 560px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 0px 60px 0px 60px;
+                      font-size: 12px;
+                      line-height: 14px;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0;
+                        text-align: justify;
+                        text-align-last: justify;
+                        color: white;
+                        padding-top: 36px;
+                        padding-bottom: 36px;
+                      "
+                    >
+                      Esta serie, creada por Dan Harmon y Justin Roiland,
+                      regresa con nuevos episodios explosivos cargados de
+                      locuras, acción, bromas sin piedad e inventos tecnológicos
+                      llenos de ingenio. Además de seguir explorando la peculiar
+                      relación entre abuelo y nieto, Rick y Morty se enfrentan a
+                      nuevos personajes y situaciones que los pondrán más de una
+                      vez en aprietos antes de encontrar la solución más
+                      divertida para escapar de ellas.
+                    </p>
+                  </div>
+                </div>
+                <!--[if mso]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+              </div>
+              <!-- Fin Información-->
+
+              <div
+                class="spacer"
+                style="
+                  line-height: 40px;
+                  height: 15px;
+                  mso-line-height-rule: exactly;
+                  background-color: rgb(3, 3, 3);
+                  position: relative;
+                  top: 10px;
+                  box-shadow: inset 1px 4px 9px -8px;
+                "
+              >
+                &nbsp;
+              </div>
+
+              <!-- Inicio Otras series-->
+              <h1 style="color: white; font-size: 24px; padding-bottom: 36px">
+                RECIENTEMENTE AGREGADOS
+              </h1>
+              <div
+                class="three-col"
+                style="
+                  font-size: 0;
+                  text-align: center;
+                  border: 0px solid #e50914;
+                "
+              >
+                <!--[if mso]>
               <table role="presentation" width="100%" style="text-align:center;">
               <tr>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:220px;display:inline-block;vertical-align:top;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                      <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/serie-1.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                      <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/80057281"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 220px;
+                    display: inline-block;
+                    vertical-align: top;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/strangerthings.jpg"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/80057281"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
                     </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:220px;display:inline-block;vertical-align:top;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                      <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/archivo81.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                  <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/80222802"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
-                </p>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 220px;
+                    display: inline-block;
+                    vertical-align: top;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/brooklyn99.jpg"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/80222802"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:220px;display:inline-block;vertical-align:top;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                      <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/bridgerton.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                      <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/80232398"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 220px;
+                    display: inline-block;
+                    vertical-align: top;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/bettercallsaul.jpg"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/80232398"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
                     </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               </tr>
               <tr>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:220px;display:inline-block;vertical-align:top;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                    <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/casifeliz.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                    <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/80225954"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
-                  </p>
+                <h1 style="color: white; font-size: 24px; padding-bottom: 40px">
+                  ADEMÁS...
+                </h1>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 220px;
+                    display: inline-block;
+                    vertical-align: top;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/disenchantment.jpg"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/80225954"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:220px;display:inline-block;vertical-align:top;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                      <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/elreino.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                  <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/81095387"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
-                </p>
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 220px;
+                    display: inline-block;
+                    vertical-align: top;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/blacklist.jpg"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/81095387"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               <td style="width:220px;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="style=width:100%;max-width:560px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:10px;font-size:14px;line-height:18px;">
-                  <p style="margin-top:0;margin-bottom:10px;font-family:Arial,sans-serif;">
-                  <img src="https://dis-desa-web-dev.s3.amazonaws.com/Newsletter/images/losherededorsdelatierra.jpg" width="100" alt="" style="width:100px;max-width:100%;height:auto;" />
-                  <a style="position: relative;top: -20px;margin-left: px; background: red; text-decoration: none; padding: 5px 10px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff" href="https://www.netflix.com/ar/title/81267689"><span style="mso-text-raise:10pt;">Nuevos Episodios</span></a>
-                </p>
+                <div
+                  class="column"
+                  style="
+                    style=width: 100%;
+                    max-width: 560px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="padding: 10px; font-size: 14px; line-height: 18px"
+                  >
+                    <p style="margin-top: 0; margin-bottom: 10px">
+                      <img
+                        src="images/supernatural.png"
+                        alt=""
+                        style="width: 200px; max-width: 100%; height: auto"
+                      />
+                      <a
+                        style="
+                          position: relative;
+                          top: -50px;
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          color: #ffffff;
+                          display: inline-block;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        href="https://www.netflix.com/ar/title/81267689"
+                        ><span style="mso-text-raise: 10pt"
+                          >NUEVOS EPISODIOS</span
+                        ></a
+                      >
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               </tr>
               </table>
               <![endif]-->
-            </div>
-            <div class="sidebar" style="font-size:0;text-align:center;border:0px solid red">
-                <div class="column" style="width:100%;max-width:430px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:5px;font-size:14px;line-height:18px;text-align:center;">
-                  <p style="margin:0;font-family:Arial,sans-serif;">
-                        <a href="" style="margin-left: px; background: red; text-decoration: none; padding: 10px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">>VER TODAS LAS SERIES Y PELICULAS</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>   
-                  </p>
+              </div>
+              <div
+                class="sidebar"
+                style="
+                  font-size: 0;
+                  text-align: center;
+                  border: 0px solid #e50914;
+                "
+              >
+                <div
+                  class="column"
+                  style="
+                    width: 100%;
+                    max-width: 430px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 5px;
+                      font-size: 14px;
+                      line-height: 18px;
+                      text-align: center;
+                    "
+                  >
+                    <p style="margin: 0">
+                      <a
+                        href=""
+                        style="
+                          margin-left: px;
+                          background: #e50914;
+                          text-decoration: none;
+                          padding: 10px 25px;
+                          color: #ffffff;
+                          display: inline-block;
+                          margin-bottom: 36px;
+                          mso-padding-alt: 0;
+                          text-underline-color: #ffffff;
+                        "
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 25px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 20pt;
+                            "
+                            >&nbsp;</i
+                          ><!
+                        [endif]--><span
+                          style="mso-text-raise: 10pt; font-weight: bold"
+                          >> VER TODAS LAS SERIES Y PELICULAS</span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 25px; mso-font-width: -100%"
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div> 
-            <!--Fin Otras series--> 
-              
-            <!-- Inicio de Pie de página-->  
-            <div class="sidebar" style="font-size:0;text-align:center;direction:rtl;border:0px solid red">
-              <div class="large" style="width:100%;max-width:560px;display:inline-block;vertical-align:middle;direction:ltr;">
-                <div style="padding:0px 60px 0px 60px;font-size:8px;line-height:14px;">
-                  <p style="margin:0;font-family:Arial,sans-serif;color:grey">Si tienes alguna pregunta o queja, no dudes en contactar con nosotros.</p>
-                  <p style="margin:0;font-family:Arial,sans-serif;color:grey">100 Winchester Circle, Los Gatos, CA 95032, U.S.A.</p>
-                  <p style="margin:0;font-family:Arial,sans-serif;color:grey">Este mensaje fue enviado a grupo8@uade.edu.ar por Netflix como parte de su membresía.</p>
-                  <p style="margin:0;font-family:Arial,sans-serif;color:grey;text-decoration: underline;">Desuscribirse | Térmisos de uso  |  Privacidad  |  Centro de ayuda</p>
+              <!--Fin Otras series-->
+
+              <!-- Inicio de Pie de página-->
+              <div
+                class="sidebar"
+                style="
+                  font-size: 0;
+                  text-align: center;
+                  direction: rtl;
+                  border: 0px solid #e50914;
+                "
+              >
+                <div
+                  class="large"
+                  style="
+                    width: 100%;
+                    max-width: 560px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    direction: ltr;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 0px 60px 0px 60px;
+                      font-size: 8px;
+                      line-height: 14px;
+                    "
+                  >
+                    <p style="margin: 0; color: grey">
+                      Si tienes alguna pregunta o queja, no dudes en contactar
+                      con nosotros.
+                    </p>
+                    <p style="margin: 0; color: grey">
+                      100 Winchester Circle, Los Gatos, CA 95032, U.S.A.
+                    </p>
+                    <p style="margin: 0; color: grey">
+                      Este mensaje fue enviado a grupo8@uade.edu.ar por Netflix
+                      como parte de su membresía.
+                    </p>
+                    <p
+                      style="margin: 0; color: grey; text-decoration: underline"
+                    >
+                      Desuscribirse | Térmisos de uso | Privacidad | Centro de
+                      ayuda
+                    </p>
+                  </div>
                 </div>
-                 
-                  
-              </div>
-              <!--[if mso]>
+                <!--[if mso]>
               </td>
               </tr>
               </table>
               <![endif]-->
-            </div> 
-            <!-- Fin de Pie de página-->
-            
+              </div>
+              <!-- Fin de Pie de página-->
             </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-</body>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
