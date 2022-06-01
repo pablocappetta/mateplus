@@ -62,7 +62,11 @@
           />
           <div class="text">Stranger Things</div>
         </div>
-
+        <img
+            class="blur-banner"
+            src="./public/images/st_banner.png"
+            style="width: 100%"
+          />
         <div class="mySlides fade">
           <img
             id="banner"
@@ -70,6 +74,11 @@
             style="width: 100%"
           />
           <div class="text">Severance</div>
+          <img
+          class="blur-banner"
+          src="./public/images/severance_banner.png"
+          style="width: 100%"
+        />
         </div>
 
         <div class="mySlides fade">
@@ -79,6 +88,11 @@
             style="width: 100%"
           />
           <div class="text">Avengers: Endgame</div>
+          <img
+          class="blur-banner"
+          src="./public/images/endgame_banner.png"
+          style="width: 100%"
+        />
         </div>
 
         <!-- Next and previous buttons -->
@@ -204,6 +218,8 @@
       let slideIndex = 1;
       showSlides(slideIndex);
 
+      let blurredSlidesIndex = 1;
+
       // Next/previous controls
       function plusSlides(n) {
         showSlides((slideIndex += n));
@@ -217,20 +233,25 @@
       function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
+        let blurredSlides = document.getElementsByClassName("blur-banner");
         let dots = document.getElementsByClassName("dot");
+
         if (n > slides.length) {
           slideIndex = 1;
         }
         if (n < 1) {
+          blurredSlidesIndex = slides.length;
           slideIndex = slides.length;
         }
         for (i = 0; i < slides.length; i++) {
+          blurredSlides[i].style.display = "none";
           slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
+        blurredSlides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
     </script>
