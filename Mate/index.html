@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>mate+</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <a href="#">
+          <div class="container-logo-text">
+            <img id="logo" src="./public/images/logo.png" />
+            <p id="logo-name">mate+</p>
+          </div>
+        </a>
+        <nav>
+          <div class="container-nav-bar">
+            <ul id="navbar-options">
+              <a href="#"><li>Inicio</li></a>
+              <a href="#"><li>Series</li></a>
+              <a href="#"><li>Películas</li></a>
+              <a href="#"><li>Mis listas</li></a>
+            </ul>
+          </div>
+        </nav>
+        <div class="container-header-profile">
+          <i class="bi bi-gear-fill"></i>
+          <p id="profile-user">Rick</p>
+          <img id="profile-avatar" src="./public/images/avatar.png" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container-banner-home">
+        <i class="bi bi-arrow-left-circle-fill banner-icon-left"></i>
+        <div id="banner"></div>
+        <i class="bi bi-arrow-right-circle-fill banner-icon-right"></i>
+      </section>
+      <section class="new-arrivals">
+        <h1>Nuevos lanzamientos</h1>
+        <div class="container-new-arrivals">
+          <div class="multimedia-card">
+            <img src="./public/images/spidermanffh.jpg" />
+          </div>
+          <div class="multimedia-card">
+            <img src="./public/images/thebatman.jpg" />
+          </div>
+          <div class="multimedia-card">
+            <img src="./public/images/joker.jpg" />
+          </div>
+          <div class="multimedia-card">
+            <img src="./public/images/strangerthings.jpg" />
+          </div>
+        </div>
+      </section>
+      <section class="new-trends">
+        <h1>Tendencias</h1>
+        <div class="container-trending">
+          <div class="trending-card">
+            <p id="trend-title">Stranger Things</p>
+            <img src="./public/images/strangerthings2.jpg" />
+          </div>
+          <div class="trending-card">
+            <p id="trend-title">Obi-Wan Kenobi</p>
+            <img src="./public/images/obiwan.png" />
+          </div>
+          <div class="trending-card">
+            <span id="dummy">dummy</span>
+            <p id="trend-title">Severance</p>
+            <img src="./public/images/severance.png" />
+          </div>
+          <div class="trending-card">
+            <p id="trend-title">Rick and Morty</p>
+            <img src="./public/images/rickandmorty.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <div class="container-footer-bar">
+          <ul id="footer-options">
+            <a href="#"><li>Privacidad</li></a>
+            <a href="#"><li>Términos de uso</li></a>
+            <a href="#"><li>Anuncios de prensa</li></a>
+            <a href="#"><li>Gestionar preferencias</li></a>
+            <a href="#"><li>Contacto de prensa</li></a>
+          </ul>
+        </div>
+      </nav>
+      <p id="copyright-footer-message">
+        mate+ 2022 @ Todos los derechos reservados
+      </p>
+    </footer>
+  </body>
+</html>
