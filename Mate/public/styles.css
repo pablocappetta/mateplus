@@ -262,11 +262,6 @@ div .container-logo-text:hover {
   z-index: 1 !important;
 }
 
-.profile-section .profile-title {
-  margin-bottom: 128px;
-  text-align: center;
-}
-
 .multimedia-card {
   margin-top: 24px;
   cursor: pointer;
@@ -522,7 +517,8 @@ img.blur-banner.perfil {
   align-items: center;
   gap: 48px;
   place-content: center;
-  margin-top: 48px;
+  margin-top: 144px;
+  margin-bottom: 144px;
 }
 
 .avatar-big-profile {
@@ -544,17 +540,15 @@ img.blur-banner.perfil {
 .container-user-notifications {
   display: flex;
   flex-direction: column;
-  margin-bottom: 125px;
+  margin: 0;
 }
 
 .container-check-details {
-  margin-top: 48px;
   display: flex;
-  flex-direction: space-between;
   gap: 48px;
   font-size: 22px;
-  line-break: 2px;
   text-align: left;
+  height: 100px;
 }
 
 .container-check-details .notification-description {
@@ -575,8 +569,6 @@ img.blur-banner.perfil {
 }
 
 .credit-card-section {
-  display: flex;
-  flex-direction: column;
 }
 
 .bi-credit-card-2-front {
@@ -596,8 +588,8 @@ img.blur-banner.perfil {
   flex-direction: row;
   place-content: center;
   align-items: center;
-  margin-left: 330px;
-  margin-top: 48px;
+  margin-top: 144px;
+  margin-bottom: 144px;
   width: auto;
   gap: 0px;
 }
@@ -605,8 +597,9 @@ img.blur-banner.perfil {
 .card-details {
   display: flex;
   flex-direction: column;
-  width: 480px;
-  gap: 32px;
+  gap: 8px;
+  margin-left: 48px;
+  margin-right: 0px;
 }
 
 .highlight-card-details {
@@ -617,14 +610,18 @@ img.blur-banner.perfil {
 }
 
 .vertical-line {
-  border-left: 6px solid rgba(230, 230, 230, 0.377);
+  border-left: 2px solid rgba(230, 230, 230, 0.377);
   height: 400px;
+  margin: 0;
+  border-radius: 8px;
 }
 
 .container-card-icon-details {
   display: flex;
   flex-direction: column;
   margin-right: 48px;
+  margin-left: 0px;
+  width: 360px;
 }
 
 .number-card-details {
@@ -642,6 +639,33 @@ img.blur-banner.perfil {
   font-size: 12px;
 }
 
-.billing {
-  margin-bottom: 48px !important;
+#credit-card {
+  width: 228px;
+  filter: grayscale();
+}
+
+.container-renew-buttons {
+  display: flex;
+  flex-direction: flex-end;
+  gap: 8px;
+}
+
+.highlight-card-details-right {
+  border: 1px solid rgba(230, 230, 230, 0.377);
+  border-radius: 10px;
+  padding: 16px;
+  width: 176px;
+  text-align: center;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.cancel-sub {
+  background-color: rgba(230, 230, 230, 0.377);
+  border: transparent !important;
+}
+
+.notifications-section {
+  margin-top: 72px !important;
+  margin-bottom: 72px !important;
 }
