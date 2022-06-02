@@ -607,6 +607,7 @@ img.blur-banner.perfil {
   border-radius: 10px;
   padding: 16px;
   width: 360px;
+  cursor: pointer;
 }
 
 .vertical-line {
@@ -621,13 +622,14 @@ img.blur-banner.perfil {
   flex-direction: column;
   margin-right: 48px;
   margin-left: 0px;
-  width: 360px;
+  align-items: center;
 }
 
 .number-card-details {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  margin: 0;
 }
 
 .highlight-card-details-left {
@@ -637,11 +639,14 @@ img.blur-banner.perfil {
   width: 110px;
   text-align: center;
   font-size: 12px;
+  cursor: pointer;
 }
 
 #credit-card {
   width: 228px;
+  height: 228px;
   filter: grayscale();
+  margin: 0;
 }
 
 .container-renew-buttons {
@@ -661,8 +666,13 @@ img.blur-banner.perfil {
 }
 
 .cancel-sub {
-  background-color: rgba(230, 230, 230, 0.377);
-  border: transparent !important;
+  border: 1px solid rgba(230, 230, 230, 0.377) !important;
+  cursor: pointer;
+}
+
+.mod-datos {
+  border: 1px solid rgba(230, 230, 230, 0.377) !important;
+  cursor: pointer;
 }
 
 .notifications-section {
