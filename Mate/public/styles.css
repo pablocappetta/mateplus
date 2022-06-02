@@ -505,6 +505,13 @@ img.blur-banner.mislistas {
   opacity: 60%;
 }
 
+img.blur-banner.perfil {
+  display: inline-block !important;
+  bottom: 640px;
+  left: 340px;
+  opacity: 60%;
+}
+
 #adjust-navbar > li {
   font-weight: 500;
 }
