@@ -180,7 +180,7 @@ div .container-logo-text:hover {
   background-image: url("./public/images/banner.jpg");
   background-size: 100%;
   background-position: top;
-  border-radius: 8px;
+  border-radius: 64px;
   cursor: pointer;
   z-index: 1 !important;
 }
@@ -367,7 +367,8 @@ p#trend-title {
 .slideshow-container {
   max-width: 1280px;
   position: relative;
-  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 /* Hide the images by default */
@@ -515,16 +516,15 @@ img.blur-banner.perfil {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 48px;
   place-content: center;
-  margin-top: 144px;
-  margin-bottom: 144px;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .avatar-big-profile {
   border-radius: 1000000px;
-  width: 320px;
-  height: 320px;
+  width: 240px;
+  height: 240px;
   margin: 0px;
 }
 
@@ -532,9 +532,9 @@ img.blur-banner.perfil {
   display: flex;
   flex-direction: column;
   margin: 0px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bolder;
-  gap: 48px;
+  gap: 24px;
 }
 
 .container-user-notifications {
@@ -556,10 +556,10 @@ img.blur-banner.perfil {
 }
 
 .highlight-details-profile {
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid rgba(230, 230, 230, 0.377);
   border-radius: 10px;
   padding: 16px 72px;
-  width: 460px;
+  width: 380px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.048);
 }
@@ -588,8 +588,8 @@ img.blur-banner.perfil {
   flex-direction: row;
   place-content: center;
   align-items: center;
-  margin-top: 144px;
-  margin-bottom: 144px;
+  margin-top: 72px;
+  margin-bottom: 72px;
   width: auto;
   gap: 0px;
 }
