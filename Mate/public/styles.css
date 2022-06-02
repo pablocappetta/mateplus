@@ -13,6 +13,7 @@ body {
   background-color: #1a1a1a;
   padding: 0;
   color: rgb(230, 230, 230);
+  width: 1280px;
 }
 
 .container-header {
@@ -503,9 +504,12 @@ img.blur-banner.mislistas {
 
 img.blur-banner.perfil {
   display: inline-block !important;
-  bottom: 640px;
-  left: 340px;
+  bottom: 695px;
+  left: 265px;
   opacity: 60%;
+  margin: 0;
+  max-width: 900px;
+  height: 312px;
 }
 
 #adjust-navbar > li {
