@@ -22,7 +22,6 @@
       <div class="container-header">
         <a href="./index.html">
           <div class="container-logo-text">
-            <img id="logo" src="../public/images/logo.png" />
             <p id="logo-name">mate+</p>
           </div>
         </a>
@@ -37,25 +36,15 @@
           </div>
         </nav>
         <div class="container-header-profile">
-          <i class="bi bi-search"></i>
-          <i class="bi bi-bell-fill"></i>
-          <p id="profile-user">Rick</p>
-          <img id="profile-avatar" src="../public/images/avatar.png" />
           <a href="./perfil.html">
-            <i class="bi bi-caret-down-fill"></i>
+            <p id="profile-user">Rick</p>
+            <img id="profile-avatar" src="../public/images/avatar.png" />
           </a>
         </div>
       </div>
     </header>
     <main>
-      <!-- <section class="container-banner-home">
-        <i class="bi bi-arrow-left-circle-fill banner-icon-left"></i>
-        <div id="banner"></div>
-        <i class="bi bi-arrow-right-circle-fill banner-icon-right"></i>
-      </section> -->
-      <!-- Slideshow container -->
       <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <img
             id="banner"
@@ -96,8 +85,6 @@
           style="width: 100%"
         />
         </div>
-
-        <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
@@ -199,9 +186,8 @@
             <ul id="footer-options">
               <a href="#"><li>Privacidad</li></a>
               <a href="#"><li>Términos de uso</li></a>
-              <a href="#"><li>Anuncios de prensa</li></a>
               <a href="#"><li>Gestionar preferencias</li></a>
-              <a href="#"><li>Contacto de prensa</li></a>
+              <a href="#"><li>?</li></a>
             </ul>
           </div>
         </div>
@@ -210,43 +196,40 @@
     </footer>
     <script>
       let slideIndex = 1;
+      let blurredSlidesIndex = 1;
       showSlides(slideIndex);
 
-      let blurredSlidesIndex = 1;
-
-      // Next/previous controls
       function plusSlides(n) {
         showSlides((slideIndex += n));
       }
 
-      // Thumbnail image controls
       function currentSlide(n) {
         showSlides((slideIndex = n));
       }
 
       function showSlides(n) {
-        let i;
         let slides = document.getElementsByClassName("mySlides");
+
         let blurredSlides = document.getElementsByClassName("blur-banner");
-        let dots = document.getElementsByClassName("dot");
 
         if (n > slides.length) {
           slideIndex = 1;
         }
+
         if (n < 1) {
           blurredSlidesIndex = slides.length;
           slideIndex = slides.length;
         }
-        for (i = 0; i < slides.length; i++) {
+
+        for (let i = 0; i < slides.length; i++) {
           blurredSlides[i].style.display = "none";
           slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
+
         slides[slideIndex - 1].style.display = "block";
+
         blurredSlides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+
       }
     </script>
   </body>
