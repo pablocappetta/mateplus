@@ -185,6 +185,73 @@ div .container-logo-text:hover {
   z-index: 1 !important;
 }
 
+#best-song-ever {
+  border-radius: 8px;
+}
+
+.privacy-description {
+  margin-top: 24px;
+}
+
+.privacy-subtitle {
+  margin-top: 24px;
+}
+
+.terms-description {
+  margin-top: 24px;
+}
+
+.terms-subtitle {
+  margin-top: 24px;
+}
+
+.super-secret-description {
+  margin-top: 24px;
+}
+
+.super-secret-subtitle {
+  margin-top: 24px;
+}
+
+.tiny-map {
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+#tus-secretos {
+  width: 240px;
+  height: 172px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.container-map-secret {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.contenedor-secretos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 72px;
+  justify-content: center;
+}
+
+.contenedor-secretos-textos {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  margin-left: 48px;
+  margin-right: 0px;
+}
+
+.contenedor-secretos-textos h3 {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .banner-icon-left {
   position: relative;
   left: 72px;
@@ -200,6 +267,12 @@ div .container-logo-text:hover {
 
 .banner-icon-left:hover {
   transform: scale(1.5);
+}
+
+.container-video-secret {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .banner-icon-right:hover {
