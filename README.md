@@ -1,3 +1,3 @@
-# Argenflix
+# mate+ y Netflix Newsletter
 
-Este es un repositorio creado por el Grupo 8 de la materia Diseño y Desarrollo Web de UADE.
+Repositorio del Grupo 8 de la materia Diseño y Desarrollo Web de UADE. 
