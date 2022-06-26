@@ -102,14 +102,18 @@
         <div class="container-profile-section notifications-section">
           <div class="container-user-notifications">
             <div class="container-check-details">
-              <i class="bi bi-square"></i>
+              <span onclick="checkboxIconChanger(0)"
+                ><i class="bi bi-square"></i
+              ></span>
               <div class="notification-description">
                 Deseo recibir notificaciones acerca de nuevos lanzamientos en mi
                 correo electrónico
               </div>
             </div>
             <div class="container-check-details">
-              <i class="bi bi-check-square-fill"></i>
+              <span onclick="checkboxIconChanger(1)"
+                ><i class="bi bi-square"></i
+              ></span>
               <div class="notification-description">
                 Deseo recibir notificaciones acerca de múltiples intentos de
                 logueo y actividad inusual e información de seguridad de la
@@ -117,21 +121,27 @@
               </div>
             </div>
             <div class="container-check-details">
-              <i class="bi bi-check-square-fill"></i>
+              <span onclick="checkboxIconChanger(2)"
+                ><i class="bi bi-square"></i
+              ></span>
               <div class="notification-description">
                 Deseo recibir notificaciones con avisos de vencimientos,
                 problemas y/o confirmaciones de pago.
               </div>
             </div>
             <div class="container-check-details">
-              <i class="bi bi-square"></i>
+              <span onclick="checkboxIconChanger(3)"
+                ><i class="bi bi-square"></i
+              ></span>
               <div class="notification-description">
                 Deseo recibir notificaciones del resúmen de películas y/o series
                 vistas durante el mes.
               </div>
             </div>
             <div class="container-check-details">
-              <i class="bi bi-check-square-fill"></i>
+              <span onclick="checkboxIconChanger(4)"
+                ><i class="bi bi-square"></i
+              ></span>
               <div class="notification-description">
                 Deseo recibir avisos para participar y probar nuevas
                 funcionalidades mientras se encuentran en desarrollo.
@@ -170,6 +180,18 @@
         Correa, Chamorro, Gioria, Morán
       </p>
     </footer>
-    <script></script>
+    <script>
+      const checkboxIconChanger = (index) => {
+        const icon = document.querySelectorAll("i");
+
+        if (icon[index].classList.contains("bi-square")) {
+          icon[index].classList.remove("bi-square");
+          icon[index].classList.add("bi-check-square-fill");
+        } else {
+          icon[index].classList.remove("bi-check-square-fill");
+          icon[index].classList.add("bi-square");
+        }
+      };
+    </script>
   </body>
 </html>
