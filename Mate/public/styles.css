@@ -839,6 +839,11 @@ body>header>div>div>a {
   .text {
     color: #e32e2e;
   }
+
+  * {
+    max-width: 100%;
+  }
+
   a {
     margin: 0;
   }
@@ -847,11 +852,11 @@ body>header>div>div>a {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    
-    
+
+
   }
 
-  .container-new-arrivals > div {
+  .container-new-arrivals>div {
     flex: 200px;
     gap: 0px;
   }
@@ -866,6 +871,7 @@ body>header>div>div>a {
     margin: auto;
     /*optional centering of image*/
   }
+
   .multimedia-card img {
     display: flex;
     align-items: center;
@@ -880,17 +886,21 @@ body>header>div>div>a {
   .text {
     color: yellow;
   }
+
   * {
     max-width: 100%;
   }
-  .container-new-arrivals {
+
+   .container-new-arrivals {
     display: flex;
     flex-wrap: wrap;
+    height: 400px;;
+    overflow: hidden;
     gap: 40px;
 
   }
 
-  .container-new-arrivals>div {
+  .container-new-arrivals > div {
     flex: 100px;
     gap: 0px;
   }
@@ -901,11 +911,43 @@ body>header>div>div>a {
     max-width: 250px;
     height: 400px;
     /*actual image width*/
-   /* height: auto; /* maintain aspect ratio*/
+    /* height: auto; /* maintain aspect ratio*/
     margin: auto;
     /*optional centering of image*/
   }
+
   .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*new trends*/
+  .container-trending {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;;
+    overflow: hidden;
+    gap: 40px;
+  }
+
+  .container-trending > div {
+    flex: 100px;
+    gap: 0px;
+  }
+
+  .container-trending img {
+    /*display: block;
+  align-content: left; */
+    max-width: 250px;
+    height: 400px;
+    /*actual image width*/
+    /* height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+
+  .trending-card img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -917,11 +959,106 @@ body>header>div>div>a {
   .text {
     color: violet;
   }
+  .container-new-trends {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;;
+    overflow: hidden;
+    gap: 40px;
+  }
+
+  .container-new-trends > div {
+    flex: 100px;
+    gap: 0px;
+  }
+
+  .container-new-trends img {
+    /*display: block;
+  align-content: left; */
+    max-width: 250px;
+    height: 400px;
+    /*actual image width*/
+    /* height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+
+  .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .text {
-    color:indigo;
+    color: indigo;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+
+   .container-new-arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;;
+    overflow: hidden;
+    gap: 40px;
+
+  }
+
+  .container-new-arrivals > div {
+    flex: 200px;
+    gap: 0px;
+  }
+
+  .container-new-arrivals img {
+    /*display: block;
+  align-content: left; */
+    max-width: 250px;
+    height: 400px;
+    /*actual image width*/
+    /* height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+
+  .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*new trends*/
+  .container-trending {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;;
+    overflow: hidden;
+    gap: 40px;
+  }
+
+  .container-trending > div {
+    flex: 100px;
+    gap: 0px;
+  }
+
+  .container-trending img {
+    /*display: block;
+  align-content: left; */
+    max-width: 250px;
+    height: 400px;
+    /*actual image width*/
+    /* height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+
+  .trending-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
