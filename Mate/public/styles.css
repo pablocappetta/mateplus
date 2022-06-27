@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: auto;
   transition: color 0.2s ease;
   font-family: "Inter", "Roboto", "-apple-system", "Segoe UI", "Helvetica Neue",
@@ -569,6 +569,7 @@ p#trend-title {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -616,7 +617,7 @@ img.blur-banner.perfil {
   height: 312px;
 }
 
-#adjust-navbar > li {
+#adjust-navbar>li {
   font-weight: bolder;
 }
 
@@ -676,8 +677,7 @@ img.blur-banner.perfil {
   margin-left: 128px;
 }
 
-.credit-card-section {
-}
+.credit-card-section {}
 
 .bi-credit-card-2-front {
   font-size: 228px;
@@ -790,6 +790,138 @@ img.blur-banner.perfil {
   margin-bottom: 72px !important;
 }
 
-body > header > div > div > a {
+body>header>div>div>a {
   display: flex;
+}
+
+/* Media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .text {
+    color: blue;
+  }
+
+  * {
+    max-width: 320px;
+  }
+
+  /*content*/
+  .container-new-arrivals {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /*flex items*/
+  .container-new-arrivals>div {
+    flex: 250px;
+    /*flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 250px;*/
+
+  }
+
+  .multimedia-card {
+    margin-top: 0;
+  }
+
+  .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .text {
+    color: #e32e2e;
+  }
+  a {
+    margin: 0;
+  }
+
+  .container-new-arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+    
+  }
+
+  .container-new-arrivals > div {
+    flex: 200px;
+    gap: 0px;
+  }
+
+  .container-new-arrivals img {
+    /*display: block;
+  align-content: left; */
+    max-width: 290px;
+    height: 400px;
+    /*actual image width*/
+    /*height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+  .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Media queries */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text {
+    color: yellow;
+  }
+  * {
+    max-width: 100%;
+  }
+  .container-new-arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+  }
+
+  .container-new-arrivals>div {
+    flex: 100px;
+    gap: 0px;
+  }
+
+  .container-new-arrivals img {
+    /*display: block;
+  align-content: left; */
+    max-width: 250px;
+    height: 400px;
+    /*actual image width*/
+   /* height: auto; /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+  }
+  .multimedia-card img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text {
+    color: violet;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text {
+    color:indigo;
+  }
 }
