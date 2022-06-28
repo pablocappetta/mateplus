@@ -844,10 +844,6 @@ body>header>div>div>a {
     max-width: 100%;
   }
 
-  a {
-    margin: 0;
-  }
-
   .container-new-arrivals {
     display: flex;
     flex-wrap: wrap;
